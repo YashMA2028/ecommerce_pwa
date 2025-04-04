@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/index.css">
+    <title>E-Commerce PWA</title>
+
+    <!-- jQuery Mobile CSS & JS -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <!-- Home Page -->
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>ShopEasy</h1>
+            <a href="#cart" class="ui-btn ui-btn-right ui-icon-shopping-cart ui-btn-icon-notext"></a>
+        </div>
+
+        <div data-role="content">
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#product1">📱 Smartphone</a></li>
+            </ul>
+        </div>
+
+        <div data-role="footer">
+            <h4>&copy; 2025 ShopEasy</h4>
+        </div>
+    </div>
+
+    <!-- Product Page -->
+    <div data-role="page" id="product1">
+        <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-back ui-btn-icon-left">Back</a>
+            <h1>Smartphone</h1>
+        </div>
+
+        <div data-role="content">
+            <img src="images/mobile.jpeg" alt="Smartphone" style="width:100%">
+            <h3>Price: $699</h3>
+            <button class="add-to-cart ui-btn ui-btn-b">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Page -->
+    <div data-role="page" id="cart">
+        <div data-role="header">
+            <h1>Shopping Cart</h1>
+        </div>
+
+        <div data-role="content">
+            <ul id="cart-items" data-role="listview"></ul>
+            <a href="#" class="ui-btn ui-btn-b">Checkout</a>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
